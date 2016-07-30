@@ -1,0 +1,135 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.main_width {
+    width: 1056px;
+    margin: 0 auto;
+}
+.header {
+    height: 40px;
+    background-color: black;
+}
+.sitonchair {
+    color: white;
+    float: left;
+}
+span {
+    color: #28cfb5;
+}
+.SOC {
+    font-size: 14px;
+    margin-top: 1px;
+}
+.menu {
+    float: right;
+    margin-top: -5px;
+}
+.link {
+    color: white;
+    padding-left: 40px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.lista1 {
+    display: inline-block;
+    list-style-type: none;
+    padding-bottom: 50px;
+}
+.lista2 {
+    list-style-type: none;
+    margin-top: 10px;
+}
+.link2 {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    word-spacing: 3px;
+}
+.ul1 {
+    position: relative;
+}
+.ul2 {
+    position: absolute;
+    margin-top: 30px;
+    height: 100px;
+    width: 120px;
+    background-color: black;
+    padding: 0;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 26px;
+    display: none;
+}
+.ul2::after {
+    /*mój trójkąt który jest dołączony do listy*/
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    display: block;
+    position: absolute;
+    margin-top: -94px;
+    margin-left: 50px;
+}
+.trojkat {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    position: relative;
+    margin-left: 100px;
+}
+.ofirmie:hover .ul2 {
+    display: block;
+}
+.chair_o {
+  display: inline-block;
+  float: left;
+}
+.chair_r {
+  display: inline-block;
+  float: left;
+  margin-left: 50px;
+  margin-top: 100px;
+
+}
+.chair_b {
+  display: inline-block;
+  float: right;
+  margin-top: -280px;
+}
+.chair_o2{
+  display: inline-block;
+  float: left;
+  margin-left: -325px;
+  margin-top: 20px;
+}
+.chair_r2 {
+  display: inline-block;
+  float: left;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.chair_b2 {
+  display: inline-block;
+  float: right;
+  margin-top: -280px;
+}
+.div_footer {
+  color: #cccccc;
+  display: inline-block;
+  margin-top: 65px;
+  float: left;
+  margin-left: -300px;
+}
+.s_o_c {
+    color: #cccccc;
+    font-size: 20px;
+    float: right;
+margin-top: 80px;
+margin-right:-450px;
+}

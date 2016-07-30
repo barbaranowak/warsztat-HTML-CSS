@@ -1,0 +1,575 @@
+/*dla zahniezdzonej listy display none, a dla o firmie/gleria/kontakt przez hoovera */
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.main_width {
+    width: 1056px;
+    margin: 0 auto;
+}
+.header {
+    height: 40px;
+    background-color: black;
+}
+.sitonchair {
+    color: white;
+    float: left;
+}
+span {
+    color: #28cfb5;
+}
+.SOC {
+    font-size: 14px;
+    margin-top: 1px;
+}
+.menu {
+    float: right;
+    margin-top: -5px;
+}
+.link {
+    color: white;
+    padding-left: 40px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.lista1 {
+    display: inline-block;
+    list-style-type: none;
+    padding-bottom: 50px;
+}
+.lista2 {
+    list-style-type: none;
+    margin-top: 10px;
+}
+.link2 {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    word-spacing: 3px;
+}
+.ul1 {
+    position: relative;
+}
+.ul2 {
+    position: absolute;
+    margin-top: 30px;
+    height: 100px;
+    width: 120px;
+    background-color: black;
+    padding: 0;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 26px;
+    display: none;
+}
+.ul2::after {
+    /*mój trójkąt który jest dołączony do listy*/
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    display: block;
+    position: absolute;
+    margin-top: -94px;
+    margin-left: 50px;
+}
+.trojkat {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    position: relative;
+    margin-left: 100px;
+}
+.ofirmie:hover .ul2 {
+    display: block;
+}
+/*section1*/
+.gradient {
+    height: 503px;
+    background-color: white;
+    background-image: background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+}
+.divfotel {
+    float: left;
+    margin-top: 80px;
+}
+.tekst {
+    text-align: center;
+    padding: 100px 40px 40px 40px;
+}
+h1 {
+    font-size: 40px;
+}
+p {
+    font-size: 14px;
+    line-height: 30px;
+}
+.button {
+    background-color: #28cfb5;
+    border: none;
+    color: white;
+    font-size: 23px;
+    height: 50px;
+    width: 280px;
+    border-radius: 10px;
+    margin-left: 100px;
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 12px 46px 12px 46px;
+}
+.bialetlo {
+    background-color: white;
+}
+.section2 {
+    /*ustaw paddingi*/
+}
+.box1 {
+    margin: 24px 24px 24px 0;
+    position: relative;
+}
+.box2 {
+    margin: 24px 24px 24px 0;
+    position: relative;
+}
+.flex_container {
+    display: flex;
+    /* utrzymywanie w kolumnie lub wierszu*/
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/*340 253*/
+
+.box3 {
+    /*ZMIEŃ KOLOR * 330 62*/
+    height: 253px;
+    width: 340px;
+    border: 1px solid grey;
+    padding: 10px;
+    padding: 0 10px 0 10px;
+    margin-top: 24px;
+    padding: 0 25px 35px 25px;
+}
+.finds {
+    font-size: 16px;
+}
+.finds::after {
+    content: "";
+    height: 7px;
+    width: 139px;
+    background-color: #28cfb5;
+    display: block;
+}
+.txt {
+    font-size: 12px;
+    color: grey;
+    /*zmień potem kolor*/
+}
+.box1_p {
+    height: 62px;
+    width: 330px;
+    background-color: white;
+    position: absolute;
+    top: 140px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-left: 10px;
+    /* jak mam okreslone position to pozycje okreslam top bottom fight left */
+}
+.box2_p {
+    height: 62px;
+    width: 330px;
+    background-color: white;
+    position: absolute;
+    top: 140px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-left: 10px;
+}
+.section3 {
+    margin-top: 70px;
+    background-color: #f0f0f0;
+    padding-bottom: 130px;
+}
+.div_cennik {
+    padding-top: 30px;
+
+}
+.cennik {
+    color: #4f4f4f;
+    font-size: 20px;
+}
+.cennik::after {
+    content: "";
+    height: 8px;
+    width: 317px;
+    background-color: #28cfb5;
+    display: block;
+}
+
+/*tu wklejam z poprzedniego zadania*/
+
+.naglowek {
+    height: 500px;
+    width: 327px;
+    border: 2px solid #d4d4d4;
+    background-color: #f7f7f7;
+    z-index: 3;
+    position: relative;
+    text-align: center;
+    top: 50px;
+}
+.kolko {
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    top: -45px;
+    left: 125px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #d4d4d4;
+    z-index: 2;
+}
+.kropka {
+    height: 30px;
+    width: 30px;
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    z-index: 1;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.napis_pod_kolkiem {
+    font-size: 20px;
+    color: #28cfb5;
+}
+.CENA {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #bfbfbf;
+    color: #bfbfbf;
+    margin-left: 100px;
+    padding: 10px;
+}
+.napis_cena {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.pln {
+    font-size: 15px;
+    color: #bfbfbf;
+}
+.zakup_towaru {
+    margin-top: 60px;
+    height: 43px;
+    background-color: #e3e3e3;
+}
+.serwis {
+    height: 43px;
+    background-color: #f0f0f0;
+    margin-top: -20px;
+}
+.n_w_n {
+    font-size: 20px;
+    color: #bfbfbf;
+    padding-top: 6px;
+}
+.button_dolacz {
+    background-color: #28cfb5;
+    border: none;
+    color: white;
+    font-size: 23px;
+    height: 50px;
+    width: 280px;
+    border-radius: 10px;
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 12px 46px 12px 46px;
+}
+.b_d {
+    margin-top: 110px;
+}
+.naglowek_2 {
+    height: 500px;
+    width: 327px;
+    border: 2px solid #d4d4d4;
+    background-color: #f7f7f7;
+    z-index: 3;
+    position: relative;
+    text-align: center;
+    top: 50px;
+    left: 50px;
+
+}
+.naglowek_3 {
+    height: 500px;
+    width: 327px;
+    border: 2px solid #d4d4d4;
+    background-color: #f7f7f7;
+    z-index: 3;
+    position: relative;
+    text-align: center;
+    top: 50px;
+    margin-left: 100px;
+
+}
+.g_5lat {
+    height: 43px;
+    background-color: #e3e3e3;
+    margin-top: -20px;
+}
+.b_d2 {
+    margin-top: 65px;
+}
+.g_6lat {
+    height: 43px;
+    background-color: #e3e3e3;
+    margin-top: -20px;
+}
+.b_d3 {
+    margin-top: 25px;
+}
+
+/*hoovery*/
+
+.naglowek:hover {
+    background-color: #28cfb5;
+    border: 2px solid #28cfb5;
+}
+.naglowek:hover .kolko {
+    background-color: #28cfb5;
+    border: 2px solid #28cfb5;
+}
+.naglowek:hover .kropka {
+    background-color: white;
+}
+.naglowek:hover .CENA {
+    color: #28cfb5;
+    border: 2px solid #28cfb5;
+}
+.naglowek:hover .pln {
+    color: #28cfb5;
+}
+.naglowek:hover .napis_pod_kolkiem {
+    color: white;
+}
+.naglowek:hover .zakup_towaru {
+    background-color: white;
+}
+.naglowek:hover .button_dolacz {
+    background-color: white;
+    color: #28cfb5;
+}
+
+/*hoovery w trugim naglowku*/
+
+.naglowek_2:hover {
+    background-color: #28cfb5;
+    border: 2px solid #28cfb5;
+}
+.naglowek_2:hover .kolko {
+    background-color: #28cfb5;
+    border: 2px solid #28cfb5;
+}
+.naglowek_2:hover .kropka {
+    background-color: white;
+}
+.naglowek_2:hover .CENA {
+    color: #28cfb5;
+    border: 2px solid #28cfb5;
+}
+.naglowek_2:hover .pln {
+    color: #28cfb5;
+}
+.naglowek_2:hover .napis_pod_kolkiem {
+    color: white;
+}
+.naglowek_2:hover .zakup_towaru {
+    background-color: white;
+}
+.naglowek_2:hover .g_5lat {
+    background-color: white;
+}
+.naglowek_2:hover .button_dolacz {
+    background-color: white;
+    color: #28cfb5;
+}
+
+/*hoovery w 3 naglowku*/
+
+.naglowek_3:hover {
+    background-color: #28cfb5;
+    border: 2px solid #28cfb5;
+}
+.naglowek_3:hover .kolko {
+    background-color: #28cfb5;
+    border: 2px solid #28cfb5;
+}
+.naglowek_3:hover .kropka {
+    background-color: white;
+}
+.naglowek_3:hover .CENA {
+    color: #28cfb5;
+    border: 2px solid #28cfb5;
+}
+.naglowek_3:hover .pln {
+    color: #28cfb5;
+}
+.naglowek_3:hover .napis_pod_kolkiem {
+    color: white;
+}
+.naglowek_3:hover .zakup_towaru {
+    background-color: white;
+}
+.naglowek_3:hover .g_6lat {
+    background-color: white;
+}
+.naglowek_3:hover .button_dolacz {
+    background-color: white;
+    color: #28cfb5;
+}
+.div_kontakt {
+    margin-top: 150px;
+    margin-left: 25px;
+}
+.kontakt {
+    color: #4f4f4f;
+    font-size: 20px;
+}
+.kontakt::after {
+    content: "";
+    height: 8px;
+    width: 317px;
+    background-color: #28cfb5;
+    display: block;
+}
+::-webkit-input-placeholder {
+    color: #cccccc;
+    /* Chrome, Opera, Safari */
+    font-size: 35px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v11/ZKwULyCG95tk6mOqHQfRBAsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+::-moz-placeholder {
+    color: #cccccc;
+    /* Firefox */
+    font-size: 35px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v11/ZKwULyCG95tk6mOqHQfRBAsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+::-ms-input-placeholder {
+    color: #cccccc;
+    /* IE 10+ */
+    font-size: 35px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v11/ZKwULyCG95tk6mOqHQfRBAsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+input {
+    border: 1px solid #28cfb5;
+    height: 55px;
+    width: 620px;
+    margin-left: 25px;
+}
+.text {
+    padding: 15px 0 0 15px
+}
+.text:focus {
+  font-size: 35px;
+  font-family: 'Raleway';
+  color: #cccccc; /*to co wpisuje w formularz*/
+}
+.wiadomosc {
+    height: 190px;
+    text-indent: 15px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    resize: none;
+}
+.tabela {
+    display: inline-block;
+    /*  position: relative; */
+}
+.div_czerw_fotel {
+    float: right;
+    display: inline-block;
+    /*position: relative;*/
+}
+.div_form {
+    /*position: absolute;*/
+    margin-left: 780px;
+    margin-top: -150px;
+    float: left;
+}
+.form_ok {
+    border: 1px solid #28cfb5;
+    float: left;
+}
+.div_zgoda {
+    width: 300px;
+    float: right;
+    margin-top: -180px;
+    margin-right: -90px;
+}
+.zgoda {
+    color: #cccccc;
+    font-size: 20px;
+}
+.div_footer {
+  color: #cccccc;
+  display: inline-block;
+  margin-top: 65px;
+  margin-left: 25px;
+  float: left;
+}
+.social_m {
+  float: left;
+  margin-top: 70px;
+  margin-left: 420px;
+}
+.s_o_c {
+    color: #cccccc;
+    font-size: 20px;
+    float: right;
+margin-top: 80px;
+margin-right: -70px;
+}
+.button_send {
+    background-color: #28cfb5;
+    border: none;
+    color: white;
+    font-size: 26px;
+    height: 50px;
+    width: 350px;
+    border-radius: 10px;
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 20px 130px 20px 130px;
+}
+.b_d4 {
+  float: right;
+  margin-top: -50px;
+  margin-right: -75px;
+}
