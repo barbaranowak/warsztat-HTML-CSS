@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>SIT ON OUR CHAIR</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" type="text/javascript"></script>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,900' rel='stylesheet' type='text/css'>
 </head>
 
@@ -33,23 +35,33 @@
 
       <div class="gradient">
         <div class="main_width">
-            <div class="divfotel"><img class="fotel" src="img/black_chair.png"></img></div>
+          <div class="flex_container_gradient">
+            <div id="prevPicture" class="prev_button"> < </div>
+            <div class="divfotel slider">
+              <ul>
+              <li class="chairs_img"><img class="fotel" src="img/black_chair.png"></img></li>
+              <li class="chairs_img"><img src="img/red.png"</img></li>
+              <li class="chairs_img"><img src="img/orange.png"</img></li>
+              </ul>
+            </div>
               <div class="tekst"><h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
                 <p>Nunc a nunc. Vestibulum massa ac turpis rutrum sollicitudin augue quis neque. Etiam aliquam imperdiet. Nullam justo nec enim fringilla faucibus, dolor sit amet, consectetuer adipiscing risus dolor nunc, ornare non, sollicitudin magna. Vestibulum elit sed justo.</p>
-              </div>
+            </div>
                 <a class="button" href="">ZOBACZ WIĘCEJ</a>
-        </div>
+                <div id="nextPicture" class="next_button"> > </div>
+              </div>
+          </div>
         </div>
         </section>
         <section class="section2">
             <div class="main_width">
                 <div class="flex_container">
-                    <div class="box1"><img src="img/box1_img.jpg">
+                    <div class="box1"><img id="white_chair" src="img/box1_img.jpg">
                         <div class="box1_p">
                             <p class="finds"><strong>Chair CLAIR</strong></p>
                         </div>
                     </div>
-                    <div class="box2"><img src="img/box2_img.jpg">
+                    <div class="box2"><img id="child" src="img/box2_img.jpg">
                         <div class="box2_p">
                             <p class="finds"><strong>Chair MARGARITA</strong></p>
                         </div>
@@ -146,6 +158,82 @@
                 </div>
             </div>
         </section>
+        <section class="application ">
+    <div class="main_width">
+  <!-- wklejona sekcja -->
+        <section class="choice_part inline">
+            <header>
+                <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                <span class="green_bell"></span>
+            </header>
+
+            <div class="form">
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz rodzaj</span>
+                    <span id="first_arrow" class="list_arrow"></span>
+                    <ul id="first_list" class="list_panel">
+                        <li>Clair</li>
+                        <li>Margarita</li>
+                        <li>Selena</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz kolor</span>
+                    <span id="second_arrow" class="list_arrow"></span>
+                    <ul id="second_list" class="list_panel">
+                        <li>Czerwony</li>
+                        <li>Czarny</li>
+                        <li>Pomarańczowy</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz materiał</span>
+                    <span id="third_arrow" class="list_arrow"></span>
+                    <ul id="third_list" class="list_panel">
+                        <li>Tkanina</li>
+                        <li>Skóra</li>
+                    </ul>
+                </div>
+                <div class="checkbox check-box">
+                    <input type="checkbox" id="transport" data-price="29">
+                    <label for="transport">Transport</label>
+                </div>
+                <!--<div class="checkbox"></div>-->
+                <!--<span class="list_label inline_text">Transport</span>-->
+            </div>
+        </section>
+
+        <section class="image_part inline">
+            <img src="img/red_chair.png">
+        </section>
+
+        <section class="summary_part inline">
+            <header class="align_right">
+                <h3>PODSUMOWANIE</h3>
+                <span class="green_bell"></span>
+            </header>
+
+            <div class="summary_panel">
+                <div class="panel_left">
+                    <h4 class="title">Twój fotel</h4>
+                    <span class="color"></span>
+                    <span class="pattern"></span>
+                    <span class="transport"></span>
+                </div>
+                <div class="panel_right">
+                    <h4 class="value"></h4>
+                    <span class="color_value"></span>
+                    <span class="pattern_value"></span>
+                    <span class="transport_value"></span>
+                </div>
+                <div class="sum_label">SUMA</div>
+                <div class="sum"><strong></strong></div>
+            </div>
+            <a href="" class="green_button">Zamawiam</a>
+        </section>
+    </div>
+</section>
+
         <section class="section4">
             <div class="main_width">
                 <div class="div_kontakt">
